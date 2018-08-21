@@ -37,7 +37,7 @@ class SQLQuery {
     }
     
     function select($id) {
-    	$query = 'select * from `'.$this->_table.'` where `id` = \''.mysql_real_escape_string($id).'\'';
+    	$query = 'select * from `'.$this->_table.'` where `ID` = \''.mysql_real_escape_string($id).'\'';
     	return $this->query($query, 1);    
     }
 
